@@ -1,4 +1,3 @@
-'use strict';
 
 const should = require('should');
 require('should-sinon');

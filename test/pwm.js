@@ -1,4 +1,3 @@
-'use strict';
 
 const should = require('should');
 const sinon = require('sinon');
@@ -35,11 +34,7 @@ describe('lib/pwm.js', () => {
 
     it('should initialize', () => {
       (function () {
-        try {
-          pwm({ i2c }).init();
-        } catch (e) {
-          throw e;
-        }
+        pwm({ i2c }).init();
       }).should.not.throw();
     });
 
