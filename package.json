@@ -63,6 +63,7 @@
     "posttest": "npm run lint",
     "lint": "eslint .",
     "prebuild": "rimraf dist",
+    "prepack": "babel --copy-files --out-dir dist --ignore test/ lib",
     "build": "babel --copy-files --out-dir dist --ignore test/ lib",
     "build-docs": "rimraf docs && jsdoc -c ./jsdoc.conf.json && node gitify-docs.js",
     "semantic-release": "semantic-release"
